@@ -1,0 +1,25 @@
+{
+  "verified_at": "2026-10-07T18:06:37.334538+08:00",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "build": {
+    "command": "LEAN_NUM_THREADS=4 lake build",
+    "exit_code": 0,
+    "lake_jobs": 7061,
+    "extracted_modules_compiled": 2943
+  },
+  "axiom_check": {
+    "command": "lake env lean CheckAxioms.lean",
+    "exit_code": 0,
+    "theorems": [
+      "OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re",
+      "OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re"
+    ],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_integrity": "All 2943 source files match the SHA-256 hashes in provenance.json",
+  "comparator_run": false
+}
